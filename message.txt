@@ -1,0 +1,48 @@
+portfolio-website/
+│
+├── public/
+│   ├── styles/
+│   │   ├── content.css
+│   │   └── layout.css
+│   └── images/
+│
+├── views/
+│   ├── partials/
+│   │   ├── header.ejs
+│   │   ├── footer.ejs
+│   │   └── navbar.ejs
+│   ├── index.ejs
+│   ├── about.ejs
+│   ├── contact.ejs
+│
+├── node_modules/
+│
+├── index.js
+├── package.json
+└── .gitignore
+
+
+
+contact info
+
+<%- include("partials/header.ejs") %>
+
+<div class="container mt-5">
+  <h1 class="text-center">Contact Me</h1>
+  <form class="mt-4">
+    <div class="mb-3">
+      <input name="name" type="text" class="form-control feedback-input" placeholder="Name" />
+    </div>
+    <div class="mb-3">
+      <input name="email" type="email" class="form-control feedback-input" placeholder="Email" />
+    </div>
+    <div class="mb-3">
+      <textarea name="text" class="form-control feedback-input" placeholder="Comment"></textarea>
+    </div>
+    <div class="d-grid">
+      <button type="submit" class="btn btn-primary">SUBMIT</button>
+    </div>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
